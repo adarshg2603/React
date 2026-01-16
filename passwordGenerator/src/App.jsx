@@ -34,7 +34,7 @@ function App() {
     buttonStyle.textContent = "Copied"
     setTimeout(() => {
       buttonStyle.textContent = "Copy"
-    } , 5000)
+    } , 1000)
   } , [password])
     
   useEffect(() => {
