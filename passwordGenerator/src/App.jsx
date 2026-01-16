@@ -23,8 +23,11 @@ function App() {
       let char = Math.floor(Math.random() * str.length) 
       pass += str.charAt(char)
     }
-    buttonStyle.textContent = "Copy"
+    if(!pass){
+      buttonStyle.textContent = "Copy"
+    }
     setPassword(pass)
+    
 
   } , [length , numAllowed , charAllowed , setPassword])
 
