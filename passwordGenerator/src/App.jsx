@@ -68,11 +68,11 @@ function App() {
            min={6}
            max={16}
            value={length}
-          
+           id='forlength'
            className='cursor-pointer outline-0 bg-gray-300 accent-blue-700 apprearance-none'
            onChange={(e) => {setLength(e.target.value)}}
            />
-           <label htmlFor="">Length: {length}</label>
+           <label htmlFor='forlength' >Length: {length}</label>
         </div>
         <div className='flex items-center gap-x-1'>
           <input 
@@ -83,7 +83,7 @@ function App() {
             setNumAllowed((prev) => !prev);
           }}
           />
-          <label  htmlFor='numberInput'>Include Numbers</label>
+          <label htmlFor='numberInput' >Include Numbers</label>
         </div>
         <div className='flex items-center gap-x-1'>
           <input 
